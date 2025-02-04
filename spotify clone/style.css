@@ -1,0 +1,416 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin : 0;
+    padding : 0;
+    background-color : #000000;
+    color : white;
+    width : 100vw;
+    height : 100vh;
+    overflow: hidden;
+}
+
+.main {
+    display : flex;
+}
+
+.sidebar, .main-content {
+    margin-top: 0.75rem;
+    height : 100vh;
+}
+
+.sidebar {
+    width : 25rem;
+}
+
+.nav-options, .library, .main-content {
+    border-radius: 0.5rem;
+    background-color: #121212;
+}
+
+/************************************************** nav-options ********************************************************************************/
+.nav-options, .library {
+    width : 89%;
+    margin-left : 0.7rem;
+    padding-left : 1.5rem;
+}
+
+.nav-options {
+    height : 7rem;
+    display : flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+}
+
+.nav-options i {
+    color : white;
+    font-size : 1.5rem;
+}
+
+.nav-options a {
+    margin-left : 1.5rem;
+    text-decoration: none;
+    color : white;
+    font-size :  1rem;
+    font-weight: 600;
+}
+
+.nav-options .search {
+    opacity : 0.7;
+}
+
+.nav-options .search:hover {
+    opacity : 1;
+}
+
+/*************************************************** Library-Options****************************************************************************/
+.library {
+    margin-top : 0.7rem;
+    height : 100%;
+}
+
+.options {
+    display : flex;
+    padding : 1rem 0.3rem;
+    justify-content: space-between;
+    align-items : center;
+}
+
+
+.lib-options img {
+    height: 1.25rem;
+}
+
+.lib-options a {
+    margin-left: 0.7rem;
+    color : white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;  
+}
+
+.icons {
+    display : flex;
+}
+
+.icons i {
+    font-size: 1.25rem;
+    margin-right : 2rem;
+    opacity : 0.7;
+}
+
+.lib-options {
+    opacity : 0.7;
+}
+
+.icons i:hover, .lib-options:hover {
+    opacity : 1;
+    font-weight: 900;
+}
+
+/************************************************** Library-Boxes ****************************************************************************/
+
+.box {
+    width : 84%;
+    height : 6.5rem;
+    border-radius: 1rem;
+    background-color: #242424;
+    padding : 1rem 1.25rem ;
+    margin: 0.5rem 0rem;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box h5 {
+    margin-top: 0;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.box p {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 0;
+    opacity: 0.7;
+}
+
+.box button {
+    height : 2.2rem;
+    background-color: #fff;
+    color : #000;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    width : fit-content;
+    border : none;
+    padding: 0.25rem 1rem;
+}
+
+/************************************************** main-content *****************************************************************************/
+.main-content {
+    flex : 1;
+    overflow: auto;
+}
+
+.main-content::-webkit-scrollbar {
+    width: 0px;
+}
+/************************************************** navbar **********************************************************************************/
+nav {
+    width : 100%;
+    height : 4rem;
+    display : flex;
+    background-color: #565a56;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top : 0;
+    z-index : 10;
+}
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    width : 4.5rem;
+    margin-left : 1.5rem;
+}
+
+.less-than, .greater-than {
+    background-color: #2e302e;
+    width : 2rem;
+    height : 2rem;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.less-than i, .greater-than i {
+    font-weight: 600;
+    color : white;
+    opacity: 0.3;
+    width : 1rem;
+    height : 1rem;
+}
+
+.badges {
+    width : 22rem;
+    display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.badges button {
+    height : 2.2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    width : fit-content;
+    border : none;
+    padding: 0.25rem 1rem;
+}
+
+.badges .explore {
+    background-color: #fff;
+    color : #000;
+}
+
+.badges .install {
+    background-color: #000;
+    color : #fff;
+}
+
+.badges .bell, .badges .profile {
+    width : 2rem;
+    height : 2rem;
+    background-color: #000;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/************************************************* Albumns ****************************************************/
+
+.cards {
+    display : flex;
+    flex-direction: column;
+    margin-top : 1.25rem;
+}
+
+.heading {
+    width : 100%;
+    height : 3rem;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.heading h2 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.cards-container {
+    display : flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width : 11rem;
+    height : 16.5rem;
+    background-color: #181818;
+    margin : 0.2rem;
+    padding : 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.card:hover {
+    background-color: #282828;
+}
+
+.card img {
+    width : 11rem;
+    height : 11rem;
+    border-radius: 0.5rem;
+}
+
+.card .title {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.card .info {
+    margin-top: 0.5rem;
+    opacity: 0.5;
+    font-size: 0.85rem;
+}
+
+/************************************************** footer ***************************************************/
+footer {
+    width : 100%;
+    height : 30rem;
+}
+
+/************************************************** music-player *******************************************/
+.music-player {
+    position : absolute;
+    height : 4.5rem;
+    width : 100vw;
+    background-color: #121212;
+    bottom : 0rem;
+}
+
+.nav-footer {
+    display : none;
+}
+
+/****************************************************Responseviness********************************************/
+
+@media (max-width : 1250px) {
+    .arrow .greater-than, .badges .explore {
+        display: none;
+    }
+
+    .badges {
+        width : 15rem;
+    }
+}
+
+@media (max-width : 1120px) {
+    .sidebar {
+        width : 4.5rem;
+        margin-right : 1rem;
+    }
+
+    .nav-options, .library {
+        width : 2.8rem;
+        margin-left : 0.7rem;
+        padding-left : 1.5rem;
+    }
+
+    .home a, .search a {
+        display: none;
+    }
+
+    .library .boxes, .lib-options a, .options .icons {
+        display : none;
+    }
+}
+
+@media (max-width : 810px) {
+    .main {
+        padding-right : 0.75rem;
+    }
+    .cards-container {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .cards-container::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .heading {
+        overflow: auto;
+    }
+
+    .heading::-webkit-scrollbar {
+        width: 0px;
+    }
+}
+
+@media (max-width : 580px) {
+    .nav {
+        top : 0;
+    }
+    .sidebar {
+        display : none;
+    }
+    .music-player {
+        bottom : 3rem;
+        border-radius: 0.5rem;
+    }
+    .nav-footer {
+        position: absolute;
+        bottom : 0rem;
+        width : 100%;
+        height : 4rem;
+        border-radius: 0.5rem;
+        display : flex;
+        background-color: #000;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
+    .footer-home, .footer-search, .footer-setting {
+        font-size: 1.75rem;
+        opacity : 0.7;
+    }
+
+    .footer-library img{
+        height : 1.75rem;
+        width : 1.75rem;
+        opacity : 0.7;
+        /* background-size: cover; */
+    }
+
+    .footer-home:hover, .footer-search:hover, .footer-setting:hover, .footer-library img:hover {
+        opacity : 1;
+    }
+
+    .main {
+        padding : 0;
+        overflow: hidden;
+    }
+
+}

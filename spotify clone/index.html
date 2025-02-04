@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./asserts/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNBPX83FJC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GNBPX83FJC');
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav-options">
+                <div class="home">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+
+            </div>
+
+            <div class="library">
+                <div class="options ">
+                    <div class="lib-options">
+                        <img src="./asserts/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="boxes">
+
+                    <div class="box" id="one">
+                        <div class="desc">
+                            <h5>Create Your first playlist</h5>
+                            <p>It's easy we'll help you</p>
+                        </div>
+                        
+                        <button>Create playlist</button>
+                    </div>
+
+                    <div class="box" id="two">
+                        <div class="desc">
+                            <h5>Let's find some podcasts to follow</h5>
+                            <p>We'll keep you updated on new episodes</p>
+                        </div>
+                    
+                        <button>Browse podcasts</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main-content">
+            <nav>
+                <div class="arrow">
+                    <div class="less-than">
+                        <i class="fa-solid fa-less-than"></i>
+                    </div>
+                    
+                    <div class="greater-than">
+                        <i class="fa-solid fa-greater-than"></i>
+                    </div>
+                    
+                </div>
+
+                <div class="badges">
+                    <button class="explore">Explore Premium</button>
+                    <button class="install">Install App</button>
+                    <div class="bell">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="profile">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="albumns">
+                <div class="cards">
+                    <!-- jump-back-in -->
+                    <div class="heading">
+                        <h2>Jump back in</h2>
+                    </div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <img src="./asserts/jump-back-in/card-1.png">
+                            <p class="title">Panjaa</p>
+                            <p class="info">Yuvan Sankar Raja</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/jump-back-in/card-2.png">
+                            <p class="title">Master</p>
+                            <p class="info">Anirudh Ravichander</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/jump-back-in/card-3.png">
+                            <p class="title">Salaar</p>
+                            <p class="info">Ravi Basrur</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/jump-back-in/card-4.png">
+                            <p class="title">Son of Sathyamurthy</p>
+                            <p class="info">Devi Sri Prasad</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/jump-back-in/card-5.png">
+                            <p class="title">Main Character Energy</p>
+                            <p class="info">Mana life ki maname hero!</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/jump-back-in/card-6.png">
+                            <p class="title">Fighter</p>
+                            <p class="info">Vishal-Shekhar</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/jump-back-in/card-7.png">
+                            <p class="title">Aarya 2</p>
+                            <p class="info">Devi Sri Prasad</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Recommended for today -->
+                <div class="cards">
+                    <div class="heading">
+                        <h2>Recommended for today</h2>
+                    </div>
+
+                    <div class="cards-container">
+                        <div class="card">
+                            <img src="./asserts/recommended-for-today/card-1.png">
+                            <p class="title">Baby</p>
+                            <p class="info">Vijai Bulganin</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/recommended-for-today/card-2.png">
+                            <p class="title">Mahanati</p>
+                            <p class="info">Mickey J.Meyer</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/recommended-for-today/card-3.png">
+                            <p class="title">Chal Mohan Ranga</p>
+                            <p class="info">Thaman S</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/recommended-for-today/card-4.png">
+                            <p class="title">Boys</p>
+                            <p class="info">A.R. Rahman</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/recommended-for-today/card-5.png">
+                            <p class="title">Njan Jackson</p>
+                            <p class="info">Vishnu Vijay, Anthony Daasan</p>
+                        </div>
+                         <div class="card">
+                            <img src="./asserts/recommended-for-today/card-6.png">
+                            <p class="title">Evergreen M G Sreekumar</p>
+                            <p class="info">M. G. Sreekumar</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/recommended-for-today/card-7.png">
+                            <p class="title">Adi Kapyare</p>
+                            <p class="info">Shaan Rahman</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/recommended-for-today/card-8.png">
+                            <p class="title">Two Countries</p>
+                            <p class="info">Gopi Sundar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recently Played -->
+                <div class="cards">
+                    <div class="heading">
+                        <h2>Recently Played</h2>
+                    </div>
+
+                    <div class="cards-container">
+                        <div class="card">
+                            <img src="./asserts/recently-played/card-1.png">
+                            <p class="title">Robot</p>
+                            <p class="info">A.R. Rahman</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/recently-played/card-2.png">
+                            <p class="title">seethamma Vakitlo Sirimalle Chettu</p>
+                            <p class="info">Mickey J.Meyer</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/recently-played/card-3.png">
+                            <p class="title">Ok Bangaram</p>
+                            <p class="info">A.R. Rahman</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/recently-played/card-4.png">
+                            <p class="title">Son of Sathyamurthy</p>
+                            <p class="info">Devi Sri Prasad</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/recently-played/card-5.png">
+                            <p class="title">Bheemla Nayak</p>
+                            <p class="info">Thaman S</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/recently-played/card-6.png">
+                            <p class="title">KGF Chapater1</p>
+                            <p class="info">Ravi Basrur</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/recently-played/card-7.png">
+                            <p class="title">Komaram Puli</p>
+                            <p class="info">A.R. Rahman</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/recently-played/card-8.png">
+                            <p class="title">Dhruva Nakshatram</p>
+                            <p class="info">Harris Jayaraj</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- More like Vijay Prakash -->
+                <div class="cards">
+                    <div class="heading">
+                        <h2>More like Vijay Prakash</h2>
+                    </div>
+
+                    <div class="cards-container">
+                        <div class="card">
+                            <img src="./asserts/more-like-vijay-prakash/card-1.png">
+                            <p class="title">Oye</p>
+                            <p class="info">Yuvan Shankar Raj</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/more-like-vijay-prakash/card-2.png">
+                            <p class="title">Nenu Local</p>
+                            <p class="info">Devi Sri Prasad</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/more-like-vijay-prakash/card-3.png">
+                            <p class="title">Nuvvostanante Nenoddantana</p>
+                            <p class="info">Devi Sri Prasad</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/more-like-vijay-prakash/card-4.png">
+                            <p class="title">All Out 10s Telugu</p>
+                            <p class="info">Best of 2010s from Tollywood Cover</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/more-like-vijay-prakash/card-5.png">
+                            <p class="title">#GRWM Telugu</p>
+                            <p class="info">Get ready to these songs</p>
+                        </div>
+                         <div class="card">
+                            <img src="./asserts/more-like-vijay-prakash/card-6.png">
+                            <p class="title">Allu Arjun Hits</p>
+                            <p class="info">Icon Star Iconic Hits</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asserts/more-like-vijay-prakash/card-7.png">
+                            <p class="title">Vijay Prakash Radio</p>
+                            <p class="info">With Vasuki Vaibhav, Arjun Janya</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <footer>
+
+            </footer>
+
+        </div>
+
+        <div class="music-player">
+
+        </div>
+
+        <div class="nav-footer">
+            <div class="footer-home">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="footer-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="footer-library">
+                <img src="./asserts/library_icon.png">
+            </div>
+            <div class="footer-setting">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
