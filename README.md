@@ -24,12 +24,6 @@ This repo contains fully responsive and functional frontend clones of two popula
 
 ---
 
-## 📸 Previews
-
-> 🖼️ Add screenshots or GIFs here for a better visual overview of each clone (optional).
-
----
-
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
